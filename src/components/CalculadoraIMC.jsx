@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const CalculadoraIMC = () => {
-    const [nome, setNome] = useState('');
     const [altura, setAltura] = useState('');
     const [peso, setPeso] = useState('');
     const [resultado, setResultado] = useState(null);
@@ -29,11 +28,6 @@ const CalculadoraIMC = () => {
 
     return (
         <div>
-            <label>
-                Seu Nome:
-                <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
-            </label>
-            <br />
             <label>
                 Altura (cm):
                 <input type="number" value={altura} onChange={(e) => setAltura(e.target.value)} />
